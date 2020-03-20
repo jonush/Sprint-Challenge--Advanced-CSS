@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites use *static* layouts with breakpoints to determine how webpages are viewed on different browser/screen sizes. Responsive websites are designed to be *fluid* and can adapt its layout to **any** screen size.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first design means that we create the website starting from the smallest screen size and work our way up to larger sizes. We will use `min-width` media queries in our responsive design. Desktop first design means developing the website from the largest screen sizes and working our way down. This usually requires us to use `max-width` media queries as we *size down*.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+A `font-size: 62.5%` in our `html` is important for using `rem` units because `62.5%` of 16px (the default browser font size) is 10px. This allows us to determine `rem` unit conversions very easily.
+
+(ex) if we wanted a 24px font using `rem`, the conversion would be `2.4rem` (given that we declared a `font-size: 62.5%` in our `html`)
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is an important method of writing CSS such that it allows us to use a compiler to code CSS styles more efficiently. It improves the process not only for us, but for other potential future coders as well—the structure of using preprocessors allows us to organize our CSS code efficiently so that we may return to make changes easily.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+The ability to create mixins and variables is a huge benefit as it saves time and makes the styling process much more efficient. The brief projects gave me a good idea of how useful it can be when working in the real world where collaboration is necessary.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
