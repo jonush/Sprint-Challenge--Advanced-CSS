@@ -1,1 +1,17 @@
 // Mixins Here
+.nav-layout {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-text {
+    text-align: center;
+    font-size: 2rem;
+}
+
+// Parametric Mixin
+.btn-style (@bg-color, @text-color) {
+    background-color: @bg-color;
+    color: @text-color;
+}
